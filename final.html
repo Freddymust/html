@@ -1,0 +1,320 @@
+<html>
+<head>
+<title>明新科技大學資管系網頁</title>
+<meta charset="utf-8">
+<link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+<script>
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            rtl: true
+        });
+    });
+</script>
+    
+<style>
+  *{
+    margin:0;
+    color:gray;
+   /* font-size:30px;*/
+    text-align:center;
+  }
+   .top{
+             background-color:white;
+        }
+        .top .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin:10px;
+        }
+        .top .logo{
+            /*border:1px solid red;*/
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .top .logo img{
+            width: 100px;
+            vertical-align: middle;
+        }
+        .top .top-nav{
+            /*border:1px solid red;*/
+            font-size: 20px;
+            font-weight: bold;       
+        }
+        .top .top-nav a{
+            text-decoration: none;
+        }
+        .nav {
+            background-color:#F0F0F0;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .nav ul {
+            list-style-type: none;  
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: #F0F0F0; 
+          
+        }
+        .nav li {
+            float: left; 
+           
+        }
+        .nav li a {    
+            display: block;  
+            color: black;  
+            text-align: center;  
+            padding: 14px 16px;  
+            text-decoration: none;
+            
+            
+        }
+        .nav li a:hover {
+            background-color: #F0F0F0; 
+        }
+        /*下拉式選單*/
+        .dropdown:hover .dropdown-content {
+            display: block;   /*使用block呈現上下排列*/
+        }
+        li.dropdown:hover{
+            background-color: #333;  /*設定背景顏色*/
+        }
+        .dropdown-content {  /*設定下拉選單內容格式*/
+            display: none;
+            position: absolute;
+            background-color: #F0F0F0;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {/*設定下拉選單連結內容格式*/
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+ 
+        .slider{
+          /*border:1px solid red;*/       
+
+        }
+        .slider1{
+          display:flex;
+          justify-content: center;
+        }
+
+   /* .banner{
+    background-image: linear-gradient(#FFAF60,#CCFF80);
+    padding: 20px;
+height:700px;
+text-align:center;
+    }
+    .banner h1{
+        padding: 20px;
+     
+    }*/
+    .banner{
+            background-image: linear-gradient(#FFAF60,#CCFF80);
+            padding:30px;
+        }
+        .banner h1{
+            padding: 20px;
+        }        
+        .faculty {
+            display: block;
+            justify-content: center;
+            background-color:white;
+            padding:40px;
+        }
+        .faculty {
+            display: block;
+            justify-content: center;
+            background-color:white;
+            padding:40px;
+        }
+        .faculty h2 {
+            font-size: 25px;
+            color: rgb(50,51,52);
+            padding-bottom:40px;
+        }
+        .faculty .container {
+            /*border:1px solid red;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .faculty .teacher{
+            /*border:1px solid blue;*/
+            display:block;
+            text-decoration: none;
+        }
+        .faculty .teacher img{
+            height: 350px;
+            width: 220px;
+        }
+        .faculty .teacher h3{
+            color: White;
+            background-color: rgba(39,40,34,.500);
+            text-align: center;           
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;                
+        }
+        .contact .container{
+            display: block;
+        }
+        .contact .container h2{
+            color: rgb(54, 82, 110);
+            font-size: 25px;
+        }
+        .contact .container .infos{
+            display:flex;
+            margin-top: 30px; 
+        }
+        .contact .container .infos .left{
+            display:block;
+            text-align: left;
+            margin-right: 30px;
+        }
+        .contact .container .infos .left b{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            text-decoration: bold;
+            color: Gray;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .contact .container .infos .left span{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            color: rgba(39,40,34,0.5);
+            font-size: 16px;
+            padding-left: 27px;
+        }
+        .contact .container .infos .right{
+            height: 200px;               
+        }
+        .contact .container .infos .right iframe{
+            width: 100%;
+            height: 100%;
+        }
+        .footer{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(25,26,30);
+        padding: 30px 0;
+        }
+</style>
+</head>
+<body>
+ <div class="top">
+            <div class="container">
+                <div class="logo">
+                  <img src="https://wtpgame.com/wp-content/uploads/2022/08/NEWS_natsuton_anime_COVER.jpg">
+                  通往夏天的隧道再見的出口
+                </div>
+                <div class="top-nav">
+                  <a href=>電影查詢</a>
+                  <a href=>預售票購買</a>
+                  <a href=>登入</a>
+                </div>
+              </div>
+        </div>
+  
+    <div class="nav">   
+      <ul>
+          <li><a href="#home">首頁</a></li>
+          <li class="dropdown"><a href="#introduction">電影角色介紹</a>
+          <div class="dropdown-content">
+                  <a href="#faculty">塔野薰</a>
+                  <a href="#faculty">花城杏子</a>
+                  <a href="#faculty">加賀翔平</a>
+                  </div>    
+          
+          </li>
+          <li  class="dropdown"><a href="#faculty">人員簡介</a>
+              <div class="dropdown-content">
+                  <a href="#faculty">塔野薰</a>
+                  <a href="#faculty">花城杏子</a>
+                  <a href="#faculty">加賀翔平</a>
+              </div>                       
+          </li>
+          <li><a href="#about">相關資訊</a></li>
+      </ul>
+  </div>
+  <div class="slider">
+    <div class="flexslider">
+        <ul class="slides">
+            <li><img src="https://i.epochtimes.com/assets/uploads/2022/12/id13877607-588398.jpg" /></li>
+            <li><img src="https://movies.yahoo.com.tw/i/o/production/movie-photos/November2022/phivMStw9FmyjksLrxXT-1920x1080.jpg" /></li>
+            <li><img src="http://flicksbank.console360.net/images/3949/gpmovie/1920x1080.jpg" /></li>
+        </ul>
+    </div>
+</div>
+  
+ <div class="banner" id="introduction">
+    <h1>電影簡介</h1>
+    <h1> 高中生塔野薰的妹妹在五年前意外去世，薰一直對此事感到自責。 在夏天的某日，他聽到路人談論着在香崎流傳的都市傳說——這裡存在著一條「浦島隧道」，進入隧道就能獲得任何想要的事物，但是作為代價，會突然變老。 就在當天夜晚，他出外散步時，發現了疑似是都市傳說中所描述的隧道。</h1>
+    
+
+  </div>
+
+ <div class="faculty" id="faculty">
+    <h2>角色介紹</h2>
+    <div class="container">
+        <a class="teacher" href="">
+            <img src="https://lain.bgm.tv/pic/crt/m/ee/87/73044_crt_hSa5p.jpg" />
+            <h3>塔野薰</h3>
+        </a>
+        <a class="teacher" href="">
+            <img src="https://i.ibb.co/x2q0mkb/132.png" />
+            <h3>花城杏子</h3>
+       </a>
+       <a class="teacher" href="">
+           <img src="https://i.ibb.co/VHJk40x/image.png" />
+           <h3>塔野華伶</h3>
+       </a>        
+    </div>
+</div>
+
+ <div class="slider1">
+    <div class="flexslider">
+    <h2>電影預告</h2>
+       <iframe width="1120" height="630" src="https://www.youtube.com/embed/Izh-45jS3DE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+</div>
+         <div class="contact" id="about">
+            <div class="container">
+                <h2>相關資訊</h2>
+            <div class="infos">
+                    <div class="left">
+                        <b>新竹巨城威秀影城</b>
+                        <span>新竹市東區民權路176號樓之3樓</span>
+                        <b> 電話:03 534 6999
+</b>
+                        <span>分機:3431、3432、3433</span>
+                        <b> 傳真:03-5593142</b>
+                        <span>分機:3440</span>
+                    </div>
+                    <div class="right">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14486.321782268964!2d120.9751319!3d24.8098161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbe75262eace43f63!2zQmlnIENpdHnpgaDmnbHlt6jln47os7zniankuK3lv4M!5e0!3m2!1szh-TW!2stw!4v1671674830469!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <div class="footer">
+        &copy;Copyright 2022 Department of Information Management, MUST. All rights reserved. 維護者 WEI YU FENG
+ </div>
+</body>
+</html>
